@@ -4,6 +4,10 @@ This little plugin allows forcing the cordova webview to invalidate, triggering 
 
 Use responsibly, overdoing the refresh calls will have a negative impact on battery life.
 
+**Note** I haven't tested this yet to confirm but this plugin *will likely not work with Cordova >= 4.x* since the WebView model exposed by the framework is very different from version 3, and the webView object available to the plugin no longer extends the webkit WebView.
+
+I have no immediate plans to try and update this plugin to work with the new Cordova strategy, if you have any ideas feel free to submit a pull request.
+
 ## Installation
 
 ### With cordova-cli
